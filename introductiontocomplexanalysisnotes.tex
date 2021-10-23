@@ -1,0 +1,76 @@
+\documentclass[a4paper]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\title{Introduction to Complex Analysis Notes}
+\author{Charles Thomas}
+\begin{document}
+\maketitle
+
+\section{Week 1}
+\subsection{Lecture 2}
+\begin{itemize}
+\item Modulus of $z = x + iy$ is $|z| = \sqrt{x^2+y^2}$
+\item Multiplication of complex numbers is defined as: $(x + iy)*(u + iv) = (xu - yv) + i(xv + yu)$
+\item Multiplication of complex numbers is associative (brackets don't matter), commutive (order doesn't matter) and distributive
+\item Division is defined as $\frac{z}{w} = \frac{x +iy}{u+iv} = \frac{xu + yv}{u^2 + v^2} + i\frac{yu - xv}{u^2 + v^2}$
+\item The complex conjugate of z is $\overline{z} = x - iy$
+\item Triangle inequality: $|z+w| \leq |z| + |w|$
+\item Fundamental Theorem of Algebra: If $a_0, a_1, . . . ,$ an are complex numbers with $a_n \neq 0$, then the polynomial $p(z) = a_nz^n + a_{n-1}z^{n-1} + ... + a_0$ has n roots $z_1, z_2, . . . z_n$ in $\mathbb{C}$. It can be factored as $p(z) = a_n(z -z_1)(z - z_2)...(z -z_n)$
+\end{itemize} 
+
+\subsection{Lecture 3}
+\begin{itemize}
+\item $z = x + iy = r(cos \theta + i sin \theta)$
+\item $r = |z|$
+\item The principal argument of z, called Arg z, is the value of $\theta$ for which $-\pi < \theta \leq \pi$
+\item arg z = $\{$Arg z $+ 2\pi k : k = 0,\pm1, \pm2, . . .\} z\neq 0$
+\item $e^{i\theta} = cos \theta + isin\theta$
+\item z = $re^{i\theta}$
+\item $\overline{e^{i\theta}} = e^{-i\theta}$
+\item $arg(\overline{z}) = -arg z$
+\item $arg(z+w) = arg(z)+arg(w)$
+\item De Moivre's Formula: $(cos \theta + i sin \theta)^n = cos(n\theta) + i sin(n\theta)$
+\end{itemize} 
+
+\subsection{Lecture 4}
+\begin{itemize}
+\item Let w be a complex number. An nth root of w is a complex number z such that $z^n = w$
+\item If $w \neq 0$ then there are n distinct roots
+\item Let $z^n = w$ then $z=(re^{i\theta})^n = r^ne^{in\theta} = w = \rho e^{i\phi}$
+\item This implies $r^n = \rho \Rightarrow r = \sqrt[n]{\rho}$ 
+\item Also $e^{in\theta} = e^{i\phi} \Rightarrow cos(n\theta) + i sin(n\theta) = cos(\rho) + isin(\rho) = cos(\rho + 2k\pi) + isin(\rho + 2k\pi)$ since cos/sin are periodic with period $2\pi$ $ \Rightarrow \theta = \frac{\rho}{n} + \frac{2k\pi}{n}$ If $k \geq n$ then it starts repeating as you're adding more than $2 \pi$
+\end{itemize} 
+
+\subsection{Lecture 5}
+\begin{itemize}
+\item $B_r(z_0)$ is a disk centered at $z_0$ of radius r defined as $\{z \in \mathbb{C} : |z - z_0| < r\}$
+\item $K_r(z_0)$ is a circle centered at $z_0$ of radius r defined as $\{z \in \mathbb{C} : |z - z_0| = r\}$
+\item Let $E \subset \mathbb{C}$ z is an interior point of E if there exists an $r > 0$ such that $B_r(z) \subset E$
+\item Let $E \subset \mathbb{C}$ b is a boundary point of E if for all $r > 0$, $B_r(b)$ contains a point inside E and a point outside E
+\item The boundary of the set $E \subset C$, $\partial E$, is the set of all boundary points of E.
+\item A set is open if all its elements are interior points
+\item A set is closed if it contains all its boundary points
+\item The closure of a set is $\overline{E} = E \cup \partial E$
+\item The interior of set $E^{\mathrm{o}}$ is the set of all interior points of E
+\item Two sets, X, Y are seperated if there exists two disjoint ($U \cap V = \emptyset$) open sets, U, V with $X \subset U$ and  $Y \subset V$
+\item A set W is connected if it is impossible to find two separated non-empty sets whose union equals W
+\item Let G be an open set in $\mathbb{C}$. Then G is connected if and only if any two points in G can be joined in G by successive line segments.
+\item A set A in C is bounded if there exists a number $r > 0$ such that $A \subset B_r(0)$. If no such R exists then A is called unbounded.
+\end{itemize} 
+
+\section{Week 2}
+\subsection{Lecture 1}
+\begin{itemize}
+\item z-plane is the domain, w-plane is the range, you can graph them seperately
+\item $f^n(z)$ is the nth iterate of f - applying f n times
+\end{itemize}
+
+\subsection{Lecture 2}
+\begin{itemize}
+\item A sequence $\{s_n\}$ of complex numbers converges to $s \in \mathbb{C}$ if for every $\epsilon > 0$ there exists an index $N \geq 1$ such that $|s_n - s| < \epsilon$ for all $n \geq N$
+\item Convergent sequences are bounded
+\item COLT applies (addition, multiplication and division)
+
+\end{itemize}
+
+\end{document}
